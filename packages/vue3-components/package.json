@@ -1,0 +1,28 @@
+{
+  "name": "@wzh/vue3-components",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "4.4.0",
+    "vite": "4.4.11",
+    "vite-plugin-dts": "3.6.0",
+    "typescript": "5.2.2",
+    "vue": "3.3.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev:vue2": "pnpm --filter @wzh/vue2-demo dev",
+    "dev:vue3": "pnpm --filter @wzh/vue3-demo dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,vue,json,md}\"",
+    "commit": "cz",
+    "clean": "rm -rf node_modules **/node_modules",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "release": "release-it",
+    "release:alpha": "release-it --preRelease=alpha",
+    "release:beta": "release-it --preRelease=beta",
+    "release:rc": "release-it --preRelease=rc"
+  },
+  "volta": {
+    "node": "18.19.0",
+    "npm": "10.7.0"
+  }
+}
